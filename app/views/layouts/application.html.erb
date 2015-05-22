@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EcommerceRailsApp</title>
+  <%= stylesheet_link_tag  "application", media: "all"  %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+	<header>
+		<div class="row">
+			<div class="col-sm-4"><h1>Ecommerce logo</h1></div>
+			<div class="col-sm-8">
+				<div class="text-right">
+					<%= link_to 'My profile', '#' %> |
+					<%= link_to 'Logout', '#' %>
+				</div>
+			</div>
+		</div>
+	</header>
+	<%= yield %>
+	<footer>
+		<%= link_to 'My profile', '#' %> |
+		<%= link_to 'Logout', '#' %>
+	</footer>
+</div>
+
+</body>
+</html>
