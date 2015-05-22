@@ -1,0 +1,9 @@
+<div>
+	<div class="text-right"><%= link_to 'x', 'javascript:void(0);', id: 'close_overlay' %></div>
+	<h3><%= p.name %></h3>
+	<h4><%= p.description %></h4>
+	<div class="item_image"><%= image_tag p.image(:medium) %></div>
+	<div>MRP Rs. <%= p.rate %></div>
+	<div><%= p.discount %>%</div>
+	<div>Net Amount: Rs. <%= p.rate - ( (p.rate * p.discount)/100 ) %></div>
+</div>

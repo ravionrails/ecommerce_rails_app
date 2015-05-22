@@ -20,10 +20,18 @@
 			</div>
 		</div>
 	</header>
-	<%= yield %>
+	<div>
+		<%= yield %>
+	</div>
+	<div id="overlay">
+		<h1>Fetching data.....</h1>
+		<%= image_tag "ajax-loader.gif" %>
+	</div>
 	<footer>
-		<%= link_to 'My profile', '#' %> |
-		<%= link_to 'Logout', '#' %>
+		<%= link_to 'About us', '#' %> |
+		<%= link_to 'Company', '#' %> |
+		<%= link_to 'Contact us', '#' %> |
+		<%= link_to 'Help', '#' %>
 	</footer>
 </div>
 

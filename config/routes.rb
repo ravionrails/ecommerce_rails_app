@@ -6,6 +6,7 @@ EcommerceRailsApp::Application.routes.draw do
   root 'products#index'
 
   get 'get_products' => 'products#index', as: :get_products
+  get 'get_product_detail/:id' => 'products#detail', as: :get_product_detail
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

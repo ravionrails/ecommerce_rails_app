@@ -2,4 +2,5 @@
 	<div class="item_image"><%= image_tag p.image(:medium) %></div>
 	<div class="item_name"><%= p.id %>. <%= p.name %></div>
 	<div class="item_price">Rs. <%= p.rate %></div>
+	<div class="hide"> <%= link_to "Quick details", "javascript:void(0);", class: 'quick_detail', data: { url: get_product_detail_path(p, format: :js) } %></div>
 </div>

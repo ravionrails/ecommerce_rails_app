@@ -8,4 +8,8 @@ class ProductsController < ApplicationController
 		end
 	end
 
+	def detail
+		@product = Product.find(params[:id])
+	end
+
 end
